@@ -1,0 +1,29 @@
+{
+    "name": "nzrv/turbosms",
+    "description": "TurboSMS Laravel Wrapper For Sending SMS Messages",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kirill Nazarov",
+            "email": "nazarov@ukr.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nzrv\\TurboSMS\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nzrv\\TurboSMS\\TurboSMSServiceProvider"
+            ],
+            "aliases": {
+                "TurboSMS": "Nzrv\\TurboSMS\\Facades\\TurboSMS"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
